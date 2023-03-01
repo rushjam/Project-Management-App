@@ -27,18 +27,18 @@ function App() {
           <CssBaseline />
           <Routes>
             <Route element={<Layout />}>
-              <Route path="/" element={<Navigate to="/dashboard" replace />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/customers" element={<Customers />} />
-              <Route path="/transactions" element={<Transactions />} />
-              <Route path="/geography" element={<Geography />} />
-              <Route path="/overview" element={<Overview />} />
-              <Route path="/daily" element={<Daily />} />
-              <Route path="/monthly" element={<Monthly />} />
-              <Route path="/breakdown" element={<Breakdown />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/performance" element={<Performance />} />
+              <Route exact path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route exact path="/dashboard" element={<Dashboard />} />
+              <Route exact path="/products" element={<Products />} />
+              <Route exact path="/customers" element={<Customers />} />
+              <Route exact path="/transactions" element={<Transactions />} />
+              <Route exact path="/geography" element={<Geography />} />
+              <Route exact path="/overview" element={<Overview />} />
+              <Route exact path="/daily" element={<Daily />} />
+              <Route exact path="/monthly" element={<Monthly />} />
+              <Route exact path="/breakdown" element={<Breakdown />} />
+              <Route exact path="/admin" element={<Admin />} />
+              <Route exact path="/performance" element={<Performance />} />
             </Route>
           </Routes>
         </ThemeProvider>
